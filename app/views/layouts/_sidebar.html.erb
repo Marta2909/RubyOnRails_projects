@@ -1,0 +1,57 @@
+<div class="card">
+  <h3 class="card-title-sidebar">Słowo na dziś</h3>
+
+  <p><%= today_word_date %></p>
+  <p>Czytania na dziś</p>
+  <p><%= today_word_text %></p>
+  <p>Wspomnienie, święto </p>
+
+</div>
+
+<div class="card">
+  <h3 class="card-title-sidebar">Warto iść</h3>
+
+</div>
+
+<div class="card">
+  <h3 class="card-title-sidebar">Najpopularniejsze</h3>
+    <% @bestposts.each do |bp| %>
+      <%= render partial: "layouts/sidebar_post_lists", locals: {post: bp} %>
+    <% end %>
+</div>
+
+<div class="card">
+  <h3 class="card-title-sidebar">Ostatnio komentowane</h3>
+  <% @lastcommentedposts.each do |lcp| %>
+    <%= render partial: "layouts/sidebar_post_lists", locals: {post: lcp} %>
+  <% end %>
+</div>
+
+<div class="card">
+  <h3 class="card-title-sidebar">głodni poza mną</h3>
+  <div class="statistics">
+    <p>zarejestrowanych na blogu</p>
+    <p>odwiedzin dziś</p>
+    <p>odwiedzin w ogóle</p>
+    <p>zapisanych do newslettera</p>
+  </div>
+  <div class="fb-page"
+    style="width: 100%;"
+    data-href="https://www.facebook.com/imdb"
+    data-width="440"
+    data-hide-cover="false"
+    data-show-facepile="true"></div>
+  <h5 class="card-title-sidebar">Dziękuję Wam, Chwała Panu!</h5>
+</div>
+
+<div class="card">
+  <h3 class="card-title-sidebar">newsletter</h3>
+  <p>zapisz się do newslettera i bądź na bieżąco</p>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="podaj swój e-mail" aria-label="e-mail" aria-describedby="basic-addon1"></input>
+  </div>
+  <div class="card-body">
+    <%= link_to "Zapisz się", root_path, class: "button" %>
+  </div>
+</div>

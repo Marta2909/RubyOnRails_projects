@@ -1,0 +1,29 @@
+<div class="card mb-3">
+  <%= render partial: "postcard", locals: {post: @post} %>
+  <p class="card-text"><%= @post.body %></p>
+
+<h4 class="comment_title">Komentarze: </h4>
+  <% if @post.comments.any? %>
+    <% @post.comments.each do |c| %>
+      <blockquote class="blockquote">
+        <div class="comment_border">
+          <p><%= c.body %></p>
+          <footer class="blockquote-footer"><small><%= c.author %>, <%= format_date c.created_at %>, &nbsp;&nbsp; Odpowiedz</small></footer>
+        </div>
+      </blockquote>
+    <% end %>
+  <% else %>
+    <p>Dodaj pierwszy komentarz</p>
+  <% end %>
+
+</hr>
+<h4 class="comment_title">Dodaj komentarz</h4>
+
+  <%= simple_form_for [@post, @post.comments.build] do |f| %>
+    <%= f.input :body, label: "Treść" %>
+    <%= f.input :author, label: "Imię" %>
+    <%= f.input :email, label: "e-mail" %>
+    <%= f.button :submit, "Dodaj", class: "fbutton" %>
+  <% end %>
+
+</div>

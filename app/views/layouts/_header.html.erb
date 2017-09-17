@@ -1,0 +1,61 @@
+<div class="header_contact_nav navbar justify-content-between">
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">o blogu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">kontakt</a>
+      </li>
+    </ul>
+    <form class="form-inline" id="myform">
+      <input class="form-control-sm" type="text" placeholder="Szukaj" aria-label="Search">
+      <a href="#" onclick="document.getElementById('myform').submit()"><i class="fa fa-search" aria-hidden="true"></i> </a>
+      <a class="nav-link active" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      <!--<a class="nav-link active" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a class="nav-link active" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a class="nav-link active" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>-->
+    </form>
+
+  </div>
+</div>
+
+<div class="header_name_jumbotron">
+  <div class="container header_name">
+    <h1>głodna Chleba</h1>
+  </div>
+</div>
+
+<div class="header_menu">
+  <div class="container">
+    <ul class="nav nav-justified">
+      <li class="nav-item">
+        <a><%= link_to "Moje myśli", posts_path, class: "nav-link active" %></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pomódlmy się</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">W okolicy</a>
+      </li>
+      <li class="nav-item">
+        <%= link_to root_path do %>
+        <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Półka</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Wspólnoty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Świadectwa</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="page-header">
+  <%= image_tag "bread11", style: 'height:100%;width:auto;' %>
+</div>

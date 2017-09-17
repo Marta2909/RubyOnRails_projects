@@ -1,0 +1,13 @@
+<% if params[:controller] == "posts" && params[:action] == "show" %>
+  <h3 class="card-show-title"><%= post.title %></h3>
+<% else %>
+  <h3 class="card-title"><%= post.title %></h3>
+<% end %>
+<% if post.updated_at != post.created_at %>
+  <p class="card-text-footer"><small class="text-muted">Ostatnio aktualizowano <%= format_date post.created_at %></small></p>
+<% end %>
+<p class="card-text-footer"><small class="text-muted">Dodano <%= format_date post.created_at %>, <%= render partial: "comments_count", locals: {pp: post} %></small></p>
+
+<% if post.image.present? %>
+  <%= image_tag post.image, class: "card-img-top", alt: "Card image cap", width: "max-width", height: "500px" %>
+<% end %>

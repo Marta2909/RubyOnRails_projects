@@ -1,0 +1,89 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #fff;
+  font-family: $primary_font;
+  color: $grey_font;
+}
+
+body a {
+  color: $grey_font;
+}
+
+body a:hover {
+  color: $grey_font;
+}
+
+.button:hover {
+  background: $premium_color;
+}
+
+.fa {
+  padding-top: 0.5em;
+  padding-left: 0em;
+}
+
+.card {
+  margin-top: 25px;
+  border: 0.5px solid $grey_border;
+  padding-bottom: 25px;
+}
+
+.card-title {
+  font-family: $premium_font;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.card-text-footer {
+  text-align: center;
+  font-style: italic;
+}
+
+.pagination {
+  padding-bottom: 5px;
+  color: $grey_font;
+}
+
+.pagination a {
+  color: $grey_font;
+}
+
+.pagination span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-title-sidebar {
+  font-family: $premium_font;
+  color: $premium_color;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.today_date_sidebar {
+  text-align: center;
+}
+
+.card-body .button {
+  border: 0.5px solid $grey_border;
+  background-color: $white;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: $premium_font;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:200px;
+}
+
+.button:hover {
+  text-decoration: none;
+  background: $premium_color;
+  color: $white;
+}

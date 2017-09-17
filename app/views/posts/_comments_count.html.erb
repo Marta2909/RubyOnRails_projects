@@ -1,0 +1,7 @@
+<% if pp.comments.count == 1 %>
+  <%= pp.comments.count %> komentarz
+<% elsif pp.comments.count > 1 && pp.comments.count < 5 %>
+  <%= pp.comments.count %> komentarze
+<% else %>
+  <%= pp.comments.count %> komentarzy
+<% end %>

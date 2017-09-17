@@ -1,0 +1,47 @@
+$white: #fff;
+$grey_font: #5b5b5b;
+$grey_border: #d9d9d9;
+$premium_color: #dea665;
+$premium_font: 'Petit Formal Script', sans-serif;
+$primary_font: 'Pontano Sans', sans-serif;
+
+.fixed-top {
+  background-color: $premium_color;
+  color: $white;
+}
+
+.fixed-top a {
+  color: $white;
+}
+
+.header_name {
+  font-family: $premium_font;
+  color: $premium_color;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: $white;
+}
+
+.header_menu {
+  border-top: 0.5px solid $grey_border;
+}
+
+.header_contact_nav {
+    border-bottom: 0.5px solid $grey_border;
+}
+
+.form-control-sm {
+  border: 0px;
+  border-bottom: 0.5px solid $grey_border;
+}
+
+.footer {
+  text-align: center;
+  border-top: 0.5px solid $grey_border;
+  padding-top: 10px;
+}
+
+.footer_icon {
+  padding: 10px;
+}

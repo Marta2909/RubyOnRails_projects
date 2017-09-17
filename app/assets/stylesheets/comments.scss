@@ -1,0 +1,41 @@
+.card-show-title {
+  color: $premium_color;
+  font-family: $premium_font;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.comment_title {
+  padding-top: 40px;
+  color: $premium_color;
+  font-family: $premium_font;
+}
+
+.fbutton {
+  border: 0.5px solid $grey_border;
+  background-color: $premium_color;
+  color: $white;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:200px;
+}
+
+blockquote {
+  width: 100%;
+  padding-left: 50px;
+  justify-content: center;
+}
+
+.comment_border {
+  border-bottom: 0.5px solid $grey_border;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-control:focus {
+  border: 0.5px solid $premium_color
+}
